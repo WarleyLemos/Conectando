@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Produto à Venda</title> 
+ </head> 
+ <body> 
+  <script src="script.js"></script> 
+ 
+<script type="text/javascript" id="dcoder_script">// Adicionando um título simples ao site
+const titulo = document.createElement('h1');
+titulo.id = 'titulo';
+titulo.innerText = 'Loja de Produtos';
+document.body.appendChild(titulo);
+
+// Adicionando um produto à venda
+const produto = document.createElement('div');
+produto.id = 'produto';
+
+// Nome do produto
+const nomeProduto = document.createElement('h2');
+nomeProduto.innerText = 'Produto XYZ';
+produto.appendChild(nomeProduto);
+
+// Descrição do produto
+const descricaoProduto = document.createElement('p');
+descricaoProduto.innerText = 'Este é um excelente produto XYZ que atende todas as suas necessidades.';
+produto.appendChild(descricaoProduto);
+
+// Preço do produto
+const precoProduto = document.createElement('p');
+precoProduto.innerText = 'Preço: R$ 99,99';
+produto.appendChild(precoProduto);
+
+// Adicionando imagem (opcional)
+const imagemProduto = document.createElement('img');
+imagemProduto.src = 'https://via.placeholder.com/150';
+imagemProduto.alt = 'Imagem do Produto XYZ';
+produto.appendChild(imagemProduto);
+
+document.body.appendChild(produto);</script></body></html>
