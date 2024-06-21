@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto JavaScript</title>
+</head>
+<body>
+    <h1 id="titulo"></h1>
+    <ul id="lista-nao-ordenada"></ul>
+    <a href="https://prozeducacao.com.br" id="link"></a>
+    <ol id="lista-ordenada"></ol>
+    <script src="script.js"></script>
+
+<script type="text/javascript" id="dcoder_script">// Captura dos elementos
+const titulo = document.getElementById('titulo');
+const listaNaoOrdenada = document.getElementById('lista-nao-ordenada');
+const link = document.getElementById('link');
+const listaOrdenada = document.getElementById('lista-ordenada');
+
+// Adicionando conteúdo textual
+titulo.innerText = "Conexão com JavaScript bem-sucedida!";
+link.innerText = "Visite Prozeducacao";
+
+// Adicionando itens na lista não ordenada
+listaNaoOrdenada.innerHTML = `
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+`;
+
+// Adicionando itens na lista ordenada com links
+listaOrdenada.innerHTML = `
+    <li><a href="https://google.com">Google</a></li>
+    <li><a href="https://facebook.com">Facebook</a></li>
+    <li><a href="https://twitter.com">Twitter</a></li>
+`;</script></body></html>
